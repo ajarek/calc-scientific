@@ -55,6 +55,7 @@ forms.forEach(fo => {
 })
 
 function silnia() {
+    if (arrOperation.length != 0) {
     let $ = arrOperation.join('')
     var i = 1;
     var s = 1;
@@ -64,9 +65,12 @@ function silnia() {
     arrOperation.splice(0, arrOperation.length, arrFormula)
     score.innerHTML = arrOperation
     arrFormula = []
+    }
+    
 }
 
 function potega() {
+    if (arrOperation.length != 0) {
     potegaArr.push(arrOperation.join(''))
     arrOperation = []
     let x = potegaArr[0]
@@ -79,4 +83,8 @@ function potega() {
         arrOperation = []
         result.removeEventListener('click', calcResult)
     }
+}
+else {
+    formula.innerHTML = `<span style="color:red">😒wrong formula</span>`
+}
 }
