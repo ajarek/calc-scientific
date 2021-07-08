@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c7bba4;
+    font-family: 'Roboto', sans-serif;
+}
+
+.calculator {
+    width: 50rem;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    padding: 3px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.display {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background: #65a7dd;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid;
+    font-size: 3rem;
+    padding: 0 1rem;
+    overflow-x: auto;
+}
+
+.score {
+    font-size: 4rem;
+    color: darkgreen;
+}
+
+.container {
+    width: 100%;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 0;
+    gap: 2px;
+}

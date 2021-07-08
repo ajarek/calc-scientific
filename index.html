@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>scientific calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="formula"></div>
+            <div class="score">0</div>
+        </div>
+        <div class="container">
+            <button type="button" class="btn-lg btn-info form" data-form="$*Math.PI/180">Rad</button>
+            <button type="button" class="btn-lg btn-info form" data-form="$*180/Math.PI">Deg</button>
+            <button type="button" class="btn-lg btn-info form" data-form="Math.sqrt($,2)">√</button>
+            <button type="button" class="btn-lg btn-info form " data-form="Math.pow($,2)">x<sup>2</sup></button>
+            <button type="button" class="btn-lg btn-info operation">(</button>
+            <button type="button" class="btn-lg btn-info operation">)</button>
+            <button type="button" class="btn-lg btn-danger delete">C</button>
+            <button type="button" class="btn-lg btn-danger clean">◁</button>
+
+            <button type="button" class="btn-lg btn-secondary form" data-form="Math.PI*$">∏</button>
+            <button type="button" class="btn-lg btn-secondary form" data-form="Math.cos($)">cos</button>
+            <button type="button" class="btn-lg btn-secondary form" data-form="Math.sin($)">sin</button>
+            <button type="button" class="btn-lg btn-secondary form" data-form="Math.tan($)">tan</button>
+            <button type="button" class="btn-lg btn-primary operation">7</button>
+            <button type="button" class="btn-lg btn-primary operation">8</button>
+            <button type="button" class="btn-lg btn-primary operation">9</button>
+            <button type="button" class="btn-lg btn-warning operation">/</button>
+
+            <button type="button" class="btn-lg btn-secondary form" data-form="Math.E*$">e</button>
+            <button type="button" class="btn-lg btn-secondary form" data-form="Math.acos($)">acos</button>
+            <button type="button" class="btn-lg btn-secondary form" data-form="Math.asin($)">asin</button>
+            <button type="button" class="btn-lg btn-secondary form" data-form="Math.atan($)">atan</button>
+            <button type="button" class="btn-lg btn-primary operation">4</button>
+            <button type="button" class="btn-lg btn-primary operation">5</button>
+            <button type="button" class="btn-lg btn-primary operation">6</button>
+            <button type="button" class="btn-lg btn-warning operation">*</button>
+
+            <button type="button" class="btn-lg btn-secondary form" data-form="Math.abs($)">|x|</button>
+            <button type="button" class="btn-lg btn-secondary form" data-form="Math.exp($)">exp</button>
+            <button type="button" class="btn-lg btn-secondary form" data-form="Math.log($)">ln</button>
+            <button type="button" class="btn-lg btn-secondary form" data-form="Math.log10($)">log</button>
+            <button type="button" class="btn-lg btn-primary operation">1</button>
+            <button type="button" class="btn-lg btn-primary operation">2</button>
+            <button type="button" class="btn-lg btn-primary operation">3</button>
+            <button type="button" class="btn-lg btn-warning operation">-</button>
+
+            <button type="button" class="btn-lg btn-secondary" onclick="potega()">x<sup>y</sup></button>
+            <button type="button" class="btn-lg btn-secondary form" data-form="1/$">1/x</button>
+            <button type="button" class="btn-lg btn-secondary form" data-form="$/100">%</button>
+            <button type="button" class="btn-lg btn-secondary" onclick="silnia()">x!</button>
+            <button type="button" class="btn-lg btn-secondary operation">.</button>
+            <button type="button" class="btn-lg  btn-primary operation">0</button>
+            <button type="button" class="btn-lg  btn-success result ">=</button>
+            <button type="button" class="btn-lg btn-warning operation">+</button>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
