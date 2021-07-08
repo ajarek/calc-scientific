@@ -37,13 +37,13 @@ body {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border: 1px solid;
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 0 1rem;
     overflow-x: auto;
 }
 
 .score {
-    font-size: 4rem;
+    font-size: 3rem;
     color: darkgreen;
 }
 
