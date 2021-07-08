@@ -66,7 +66,9 @@ function silnia() {
     score.innerHTML = arrOperation
     arrFormula = []
     }
-    
+    else {
+        formula.innerHTML = `<span style="color:red">😒wrong formula</span>`
+    }
 }
 
 function potega() {
